@@ -6,13 +6,17 @@ namespace task_7
 	{
 		static void Main(string[] args)
 		{
-			int price = 7;
+			int priceOfCristal = 7;
 			int gold;
-			int cristal;
+			int cristals;
+			int remainsOfGold;
+
 			Console.WriteLine("введите количество золота (целое число)");
 			gold = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine($"кристалов куплено - {gold / price}, золота осталось - {gold % price}");
+			cristals = gold / priceOfCristal;
+			remainsOfGold = gold % priceOfCristal;
 
+			Console.WriteLine($"кристалов куплено - {cristals}, золота осталось - {remainsOfGold}");
 		}
 	}
 }
